@@ -1,0 +1,7 @@
+<h1>{{ obituary.title }}</h1>
+<p>{{ obituary.content }}</p>
+<p><strong>Author:</strong> {{ obituary.author_name }}</p>
+<p><strong>Contact:</strong> {{ obituary.contact_email }}</p>
+{% if obituary.image %}
+  <img src="{{ obituary.image.url }}" alt="Obituary Image">
+{% endif %}

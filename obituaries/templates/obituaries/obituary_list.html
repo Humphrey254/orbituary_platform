@@ -1,0 +1,8 @@
+<h1>Obituaries</h1>
+<ul>
+  {% for obituary in obituaries %}
+    <li>
+      <a href="{{ obituary.id }}/">{{ obituary.title }}</a> - Posted on {{ obituary.date_posted }}
+    </li>
+  {% endfor %}
+</ul>
